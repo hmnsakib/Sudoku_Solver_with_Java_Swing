@@ -261,7 +261,7 @@ public class MainInterface extends JFrame {
         }
 
         if (allEmpty){
-            JOptionPane.showMessageDialog(null, "All cells are empty!", "Worning!", 2);
+            JOptionPane.showMessageDialog(null, "All cells are empty!", "Warning !", 2);
         }
         else {
             for (int i = 0; i < 9; i++) {
