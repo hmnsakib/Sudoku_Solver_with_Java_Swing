@@ -9,7 +9,7 @@ public class CellFocusListener implements FocusListener {
     private  int j;
     private  JPanel l;
 
-    public CellFocusListener(JTextField field, int i, int j, JPanel l){
+    CellFocusListener(JTextField field, int i, int j, JPanel l){
         this.field = field;
         this.i = i;
         this.j = j;
