@@ -12,14 +12,14 @@ public class MainInterface extends JFrame {
     public JTextField[][] fieldsRef = new JTextField[9][9];
 
     //---------------------------------main constructor----------------------------------
-    MainInterface(){
+    public MainInterface(){
         //main frame
         setTitle("Sudoku Solver");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setMinimumSize(new Dimension(1110, 680));
-        //ImageIcon icon = new ImageIcon(getClass().getResource("sudoku.png"));
-        //this.setIconImage(icon.getImage());
+        ImageIcon icon = new ImageIcon("sudoku.png");
+        setIconImage(icon.getImage());
 
         //main container
         Container c = this.getContentPane();
@@ -317,6 +317,7 @@ public class MainInterface extends JFrame {
 
     //---------------------------------main method----------------------------------
     public static void main(String[] args) {
-        MainInterface mainWin = new MainInterface();
+        //MainInterface mainWin = new MainInterface();
+        SwingUtilities.invokeLater(() -> new MainInterface());
     }
 }
